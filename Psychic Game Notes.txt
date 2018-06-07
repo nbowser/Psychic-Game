@@ -1,0 +1,12 @@
+Project: Psychic Game
+
+Notes: 
+	I have at least one thing very noticeably wrong with the game.
+I cssed some styles and it all seemed to work fine until I added the reset.css file.
+
+When you open the game in the browser, it looks like how I styled it.  When a key is
+pressed, then the game box shifts into a different size. I removed the reset.css file,
+but the problem stayed, however, the box doesn't get as small.
+
+If I re-link the reset.css the problem gets worse, the game box shrinks more. To
+minimize the error I have removed the reset.css link from the index.html file.

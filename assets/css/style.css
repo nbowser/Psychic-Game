@@ -1,0 +1,11 @@
+body {
+    text-align: center;    
+}
+
+#Game {
+    background-color: hsla(182, 95%, 50%, 0.808);
+    margin-left: 550px;
+    margin-right: 550px;
+    color: rgb(240, 97, 14);
+    font-size: 220%;
+}
