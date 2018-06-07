@@ -12,7 +12,6 @@ var letterToBeGuessed = alphabet[Math.floor(Math.random() * alphabet.length)];
 
 document.onkeyup = function(event) {
 
-
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
     if (guessesSoFar.indexOf(userGuess) < 0 && alphabet.indexOf(userGuess) >= 0) {
@@ -20,16 +19,13 @@ document.onkeyup = function(event) {
         guessesLeft--;
     }
 
-
     if (letterToBeGuessed == userGuess) {
         wins++;
         console.log("You won!");
         guessesLeft = 10;
         guessesSoFar = [];
         letterToBeGuessed = alphabet[Math.floor(Math.random() * alphabet.length)];
-
     }
-
 
     if (guessesLeft == 0) {
         losses++;
@@ -37,7 +33,6 @@ document.onkeyup = function(event) {
         guessesLeft = 10;
         guessesSoFar = [];
         letterToBeGuessed = alphabet[Math.floor(Math.random() * alphabet.length)];
-
     }
 
     var html = "<p><h1>The Psychic Game</h1></p>" + "<p>Guess what letter I'm thinking of?</h4></p>" + "<p>Wins: " +
